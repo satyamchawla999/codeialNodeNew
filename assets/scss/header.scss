@@ -1,0 +1,65 @@
+header {
+    color: white;
+    
+    #header-flex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        div{
+            display: inline-block;
+        }
+
+        #logo{
+            background-color:#5298e7;
+            width: 40%;
+
+            #logo-icon{
+                text-align: center;
+                i{
+                    font-size: 50px;
+                    padding: 15px;
+                }
+            }
+            h1{
+                display: inline-block;
+                margin: 0;
+                font-size: 50px;
+                // padding: 15px;
+            }
+        }
+
+        #triangle-top-left {
+            width: 0;
+            height: 0;
+            border-top: 100px solid #5298e7;
+            border-right: 100px solid transparent;
+          }
+
+        #profile-info{
+            background-color:white;
+            width: 60%;
+
+            ul{
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: right;
+
+                li{
+                    align-items: right;
+                    margin-right: 15px;
+                    display: inline-block;
+                    a{
+                        color:#5298e7;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+// 8544970622
+// 8699105989
+// 6284479400

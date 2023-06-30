@@ -1,0 +1,29 @@
+<header>
+
+    <div id="header-flex">
+        <div id="logo">
+            <span id="logo-icon">
+                <i class="fa-solid fa-code"></i>
+            </span>
+            <h1>Codeial</h1>
+        </div>
+
+        <span id="triangle-top-left">
+
+        </span>
+
+        <div id="profile-info">
+            <ul>
+                <% if(locals.user){ %>
+                    <li><a href="/users/profile/<%=user.id%>"><%= user.name %></a></li>
+                    <li><a href="/users/sign-out">Sign out</a></li>
+                <% } else { %>
+                    <li><a href="/users/sign-in">Sign in</a></li>
+                    <li><a href="/users/sign-up">Sign up</a></li>
+                <% } %>
+            </ul>
+        </div>
+
+    </div>
+
+</header>
